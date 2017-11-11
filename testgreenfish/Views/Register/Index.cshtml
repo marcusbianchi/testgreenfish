@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Register Your E-mail";
+    
+}
+@model testgreenfish.Models.Email
+
+<div class="page-header">
+    <h1>Newsletter Registration</h1>
+    <p>Add Your E-mail on the Form Bellow to Register on our Newsletter</p>
+<div>
+    <form asp-controller="Register" asp-action="Index" method="post">
+        <div class="form-group">
+            <div class="row">
+                <label class="col-md-2" asp-for="address" class="control-label"></label>
+                <input class="col-md-5" asp-for="address" placeholder="youremail@something.com" required/>
+            </div>
+            
+<div class="row">
+            <span  asp-validation-for="address" class="alert alert-warning"></span>
+  </div>
+
+            
+         </div>
+        <div class="row">
+            <button type="submit" class="btn btn-primary col-md-1 col-md-offset-2">Register</button>
+        </div>
+    </form>   
+</div>
+@if(@ViewBag.Message!=null)
+{
+<div  class="row">
+    <br>
+    <span  class="alert alert-info">@ViewBag.Message</span>
+</div>
+}
