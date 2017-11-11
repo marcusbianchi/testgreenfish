@@ -1,8 +1,10 @@
 # Test for Greenfish
 
 ## Requirements
-TO run the system in command line you will need aspnet core which can be downloaded here:
+To run the system in command line you will need aspnet core which can be downloaded here:
 https://www.microsoft.com/net/download/
+Also de database used is SQLite which can be downloaded here:
+https://sqlite.org/download.html 
 
 ### Running the System
 On the folder /testgreenfish run:
