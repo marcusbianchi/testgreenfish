@@ -2,7 +2,7 @@
 
 ## Requirements
 TO run the system in command line you will need aspnet core which can be downloaded here:
-https://www.microsoft.com/net/download/linux
+https://www.microsoft.com/net/download/
 
 ### Running the System
 On the folder /testgreenfish run:
